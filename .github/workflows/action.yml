@@ -23,7 +23,8 @@ jobs:
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.rifalarf }}
-          password: ${{ secrets.dckr_pat_6QdBbjMF6vXN5BFxnbdn33-G37M }}
+          password: ${{ secrets.dckr_pat_6QdBbjMF6vXN5BFxnbdn33-G37M }} 
+          
       
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
@@ -32,3 +33,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: rifalarf/learn-action:latest
+
+          # cek
